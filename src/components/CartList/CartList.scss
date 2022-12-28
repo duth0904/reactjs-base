@@ -1,0 +1,30 @@
+.cart-list {
+  width: 400px; 
+  background-color: #fff;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 16px;
+
+  .header-cart {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    } 
+
+    .price {
+      font-size: 24px;
+      color: red;
+      font-weight: bold;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}

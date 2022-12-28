@@ -1,0 +1,35 @@
+.cart-item {
+  background-color: rgb(240, 227, 227);
+  border-radius: 8px;
+  padding: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .price-quantity {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    margin-top: 8px;
+
+    .price {
+      color: red;
+      font-size: 16px;
+    }
+
+    .quantity {
+      font-weight: bold;
+    }
+  }
+
+  .cart-item-right {
+    display: flex;
+    flex-direction: column;
+  }
+}

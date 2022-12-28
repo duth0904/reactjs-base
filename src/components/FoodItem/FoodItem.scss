@@ -1,0 +1,29 @@
+.food-item {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 16px 16px;
+  padding: 8px 16px;
+  background-color: rgb(236, 226, 226);
+
+  border-radius: 8px;
+
+  .name {
+    font-weight: bold;
+  }
+
+  .description {
+    font-style: italic;
+  }
+
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+  }
+
+  .quantity {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+}
