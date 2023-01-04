@@ -28,5 +28,5 @@ export const FOOD_DATA = [
     name: 'Banana',
     description: 'Healthy...and green...',
     price: 28.99,
-  }
-];
+  },
+]

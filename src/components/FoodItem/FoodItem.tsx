@@ -1,18 +1,18 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
-import BaseButton from "../common/BaseButton/BaseButton";
-import { useCartContext } from "../../context/CartContext";
-import "./FoodItem.scss";
+import BaseButton from '../common/BaseButton/BaseButton'
+import { useCartContext } from '../../context/CartContext'
+import './FoodItem.scss'
 
 const FoodItem = (props: any) => {
-  const { foodItem } = props;
-  const [quantity, setQuantity] = useState(0);
-  const { addToCart } = useCartContext();
+  const { foodItem } = props
+  const [quantity, setQuantity] = useState(0)
+  const { addToCart } = useCartContext()
 
   const handleAddToCart = () => {
-    setQuantity((quantity: number) => quantity + 1);
-    addToCart(foodItem.id);
-  };
+    setQuantity((quantity: number) => quantity + 1)
+    addToCart(foodItem.id)
+  }
 
   return (
     <div className="food-item">
@@ -26,7 +26,7 @@ const FoodItem = (props: any) => {
         <BaseButton content="+ Add" handleOnClick={handleAddToCart} />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default FoodItem;
+export default FoodItem

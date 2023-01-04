@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
-import BaseButton from "../common/BaseButton/BaseButton";
-import { useCartContext } from "../../context/CartContext";
+import BaseButton from '../common/BaseButton/BaseButton'
+import { useCartContext } from '../../context/CartContext'
 import './CartItem.scss'
 
-const CartItem = (props : any) => {
-  const {addToCart, removeFromCart} = useCartContext()
+const CartItem = (props: any) => {
+  const { addToCart, removeFromCart } = useCartContext()
 
   const handleAddToCart = () => {
     addToCart(itemData.id)
@@ -15,7 +15,7 @@ const CartItem = (props : any) => {
     removeFromCart(itemData.id)
   }
 
-  const {itemData} = props
+  const { itemData } = props
   return (
     <div className="cart-item">
       <div className="cart-item-left">
